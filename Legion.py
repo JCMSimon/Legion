@@ -20,3 +20,5 @@ if __name__ == "__main__":
 	args = parser.parse_args(args=None if sys.argv[1:] else ['--help'])
 	logger = Logger("Main",args.debug)
 	start()
+
+# simon from yesterday here, add a "sitemap" history thingy that stores url hashes with a timestamp. if a url is crawled, add it, if its supposed to be crawled again but is in there, dont crawl it again if the timestmp wasnt longer than xyz ago
